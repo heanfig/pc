@@ -14,14 +14,7 @@
 }
 
 .services-card.services-card-style1 .service-card_date {
-    margin-right: 15px;
-    padding-right: 15px;
-    border-right: 2px solid #BF0027;
-    text-align: center;
-}
-
-.services-card.services-card-style1 .service-card_date .date_label {
-    display: block;
+    margin-bottom: 5px;
 }
 
 .services-card.services-card-style1 .service-card_date .date_label.date_label-day {
@@ -32,4 +25,18 @@
     flex-grow: 1;
     padding-left: 0;
     text-align: left;
+}
+
+@media (min-width: 480px) {
+    .services-card.services-card-style1 .service-card_date {
+        margin-right: 15px;
+        margin-bottom: 0;
+        padding-right: 15px;
+        border-right: 2px solid #BF0027;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .services-card.services-card-style1 .service-card_date .date_label {
+        display: block;
+    }
 }
