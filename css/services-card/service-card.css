@@ -1,108 +1,26 @@
 /* Service card container */
+
 .services-card_container {
     margin-bottom: 50px;
-}
-
-/* Service card */
-.services-card {
-    height: 100%;
 }
 
 .services-card_item {
     margin: 20px 0;
 }
 
-.services-card_image {
-    margin-bottom: 20px;
-}
-
-.services-card_img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -ms-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-}
-
-.services-card:hover .services-card_img {
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
-}
-
-.services-card_info {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.service-card_title {
-    line-height: 1;
-}
-
-.service-card_title .title_text,
-.service-card_action_button {
-    font-family: "cassannet_bold";
-}
-
-.service-card_title .title_text {
-    font-size: 28px;
-    color: #BF0027;
-}
-
-.service-card_description {
-    margin-bottom: 20px;
-    font-size: 14px;
-}
-
-.service-card_action {
-    margin-top: auto;
-}
-
-.service-card_action_button {
-    background-color: #E19D00;
-}
-
-.service-card_action_button:hover,
-.services-card:hover .service-card_action_button {
-    background-color: #c58f00;
-}
-  
 /* Mediqueries */
-@media (min-width: 480px) {
-    .services-card {
-        display: flex;
-    }
-    .services-card_image {
-        flex-basis: 50%;
-        margin-bottom: 0;
-    }
-    .services-card_img {
-        height: 100%;
-    }
-    .services-card_info {
-        flex-basis: 50%;
-        padding-left: 20px;
-    }
-}
-
 @media (min-width: 992px) {
-    .services-card_container {
+    .services-card_container.services-card--cols2,
+    .services-card_container.services-card--cols3 {
         display: flex;
         flex-wrap: wrap;
-        margin-left: -1%;
-        margin-right: -1%;
+        margin-left: -14px;
+        margin-right: -14px;
     }
-    .services-card_item,
-    .services-card--cols2 .services-card_item {
-        flex-basis: 48%;
-        margin: 1%;
+    .services-card_container.services-card--cols3 .services-card_item,
+    .services-card_container.services-card--cols2 .services-card_item {
+        flex-basis: calc(50% - 28px);
+        margin: 0 14px 28px;
     }
 }
 
@@ -110,7 +28,7 @@
     .services-card_container {
         margin-bottom: 80px;
     }
-    .services-card_item {
-        flex-basis: 31.33333%;
+    .services-card_container.services-card--cols3 .services-card_item {
+        flex-basis: calc((100% / 3) - 28px);
     }
 }

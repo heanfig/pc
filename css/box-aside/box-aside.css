@@ -1,0 +1,51 @@
+
+/* Box aside */
+
+.box-aside {
+    margin-bottom: 30px;
+}
+
+.box-aside_title {
+    margin-bottom: 25px;
+}
+
+.box-aside_title .title_text {
+    font-size: 20px;
+    font-family: "cassannet_bold";
+    text-transform: uppercase;
+}
+
+.box-aside_list li {
+    border-bottom: 1px solid #f2f2f2 ;
+    position: relative;
+    padding-left: 20px;
+}
+
+.box-aside_list li:hover::before,
+.box-aside_list li:hover .list_label,
+.box-aside_list .list_number {
+    color: #BF0027;
+}
+
+.box-aside_list li::before {
+    content: '⮞';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.box-aside_list a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    color: inherit;
+}
+
+.box-aside_list .list_number {
+    margin-left: auto;
+    padding-left: 15px;
+}

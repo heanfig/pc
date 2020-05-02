@@ -13,8 +13,12 @@
 @import 'footer.css';
 @import 'main-carousel.css';
 @import './services-card/service-card.css';
+@import './services-card/service-card-horizontal.css';
+@import './services-card/service-card-vertical.css';
 @import './offer/offer.css';
 @import './category/category.css';
+@import './box-aside/box-aside.css';
+
 /* Description */
 
 .description_container {

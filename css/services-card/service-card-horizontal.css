@@ -1,0 +1,87 @@
+
+/* layout default horizontal */
+
+/* Service card */
+.services-card {
+    height: 100%;
+}
+
+.services-card_image {
+    margin-bottom: 20px;
+}
+
+.services-card_img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.services-card:hover .services-card_img {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.services-card_info {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.service-card_title {
+    line-height: 1;
+}
+
+.service-card_title .title_text,
+.service-card_action_button {
+    font-family: "cassannet_bold";
+}
+
+.service-card_title .title_text {
+    font-size: 28px;
+    color: #BF0027;
+}
+
+.service-card_description {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.service-card_action {
+    margin-top: auto;
+}
+
+.service-card_action_button {
+    background-color: #E19D00;
+}
+
+.service-card_action_button:hover,
+.services-card:hover .service-card_action_button {
+    background-color: #c58f00;
+}
+  
+/* Mediqueries */
+@media (min-width: 480px) {
+    .services-card {
+        display: flex;
+    }
+    .services-card_image {
+        flex-basis: 50%;
+        margin-bottom: 0;
+    }
+    .services-card_img {
+        height: 100%;
+    }
+    .services-card_info {
+        flex-basis: 50%;
+        padding-left: 20px;
+    }
+}
