@@ -1,0 +1,48 @@
+/* Header */
+
+.navbar-fixed {
+    z-index: 998;
+}
+
+.nav-wrapper .sidenav {
+    background: rgb(169, 0, 39);
+}
+
+.navbar-fixed, nav {
+    background-color: rgba(169, 0, 39, 0.7);
+}
+
+.nav-wrapper .brand-logo {
+    width: 175px;
+    position: relative;
+    bottom: 14px;
+}
+
+.nav-wrapper .brand-logo img {
+    width: 100%;
+}
+
+.nav-wrapper ul li a {
+    font-size: 18px;
+    font-family: "dinmedium";
+    color: #fff;
+}
+
+.nav-wrapper ul li a .icon-search {
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+/* Mediaqueries */
+
+@media (min-width: 993px) {
+    .nav-wrapper {
+        display: flex;
+    }
+}
+
+@media (min-width: 1200px) {
+    .nav-wrapper .hide-on-med-and-down {
+        padding-left: 25px;
+    }
+}

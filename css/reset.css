@@ -1,0 +1,22 @@
+body {
+    font-size: 16px;
+    font-family: "ralewayregular";
+    color: #87868A;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+    letter-spacing: .05em;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+p {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+strong {
+    font-family: "cassannet_bold";
+}

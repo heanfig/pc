@@ -1,0 +1,186 @@
+.main-footer {
+    background-color: #353635;
+}
+
+.main-footer_column {
+    position: relative;
+}
+
+.main-footer_column:first-child {
+    margin-top: 40px;
+}
+
+.main-footer_title, .main-footer_list li, .main-footer_list a {
+    color: #fff;
+}
+
+.main-footer_list a:hover {
+    color: #BF0027;
+}
+
+.main-footer_title {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    position: relative;
+    font-family: "dinmedium";
+}
+
+.main-footer_title::after {
+    content: '';
+    width: 30%;
+    height: 2px;
+    background: #fff;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.main-footer_list li {
+    position: relative;
+    padding-left: 12px;
+}
+
+.main-footer_list li::before {
+    content: '-';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.main-footer_list--style1 li {
+    display: flex;
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+.main-footer_list--style1 li::before {
+    display: none;
+}
+
+.main-footer_label, .main-footer_text {
+    flex: 1 0 50%;
+}
+
+.main-footer_label {
+    padding-right: 10px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.main-footer_text-email {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+/* Social network */
+.main-footer_list-social_network {
+    display: flex;
+}
+
+.main-footer_list-social_network li {
+    margin-right: 10px;
+    font-size: 40px;
+}
+
+.main-footer_list-social_network li,
+.main-footer_list-social_network-vertical li {
+    -webkit-transition: .13s ease-in-out;
+    transition: .13s ease-in-out;
+}
+
+.main-footer_list-social_network li:hover,
+.main-footer_list-social_network-vertical li:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.main-footer_copyright {
+    padding: 15px 0;
+    background-color: #2A2B2A;
+    color: #fff;
+    text-align: center;
+}
+
+.main-footer_list-social_network-vertical {
+    margin: 0;
+}
+
+.main-footer_list-social_network-vertical li {
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.main-footer_list-social_network-vertical .icon {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.main-footer_list-social_network-vertical .icon::before {
+    display: block;
+    content: '';
+    background-image: url(../img/social-network-flags.png);
+    height: 40px;
+    width: 40px;
+    background-repeat: no-repeat;
+    background-size: 115px;
+}
+
+.main-footer_list-social_network-vertical .icon-messenger::before {
+    background-position-y: -16px;
+    background-position-x: -65px;
+}
+
+.main-footer_list-social_network-vertical .icon-whatsapp::before {
+    background-position-y: -62px;
+    background-position-x: -65px;
+}
+
+.main-footer_list-social_network-vertical .icon-phone::before {
+    background-position-y: -109px;
+    background-position-x: -65px;
+}
+
+.main-footer_list-social_network-vertical .icon-email::before {
+    background-position-y: -156px;
+    background-position-x: -65px;
+}
+
+.main-footer_list-social_network-vertical .icon-contact::before {
+    background-position-y: -202px;
+    background-position-x: -15px;
+    width: 90px !important;
+}
+
+/* Mediaqueries */
+@media (min-width: 993px) {
+    /* Social nwtwork */
+    .main-footer_column--social_network {
+        padding-right: 42px;
+    }    
+    .main-footer_list-social_network-vertical {
+        position: absolute;
+        right: 0;
+        top: 25px;
+    }
+    .main-footer_list-social_network-vertical li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .main-footer_list-social_network-vertical .icon::before {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+/* @media (min-width: 1200px) {
+    .main-footer_column {
+        padding-right: 10%;
+    }
+} */

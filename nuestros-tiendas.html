@@ -1,182 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Parque Caldas</title>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Parque Caldas</title>
 
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
-<body>
-  <nav role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"><span class="icon-logo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span><span class="path19"></span><span class="path20"></span><span class="path21"></span><span class="path22"></span><span class="path23"></span><span class="path24"></span><span class="path25"></span><span class="path26"></span><span class="path27"></span><span class="path28"></span><span class="path29"></span><span class="path30"></span><span class="path31"></span><span class="path32"></span><span class="path33"></span><span class="path34"></span><span class="path35"></span><span class="path36"></span><span class="path37"></span><span class="path38"></span><span class="path39"></span><span class="path40"></span><span class="path41"></span><span class="path42"></span><span class="path43"></span><span class="path44"></span><span class="path45"></span><span class="path46"></span><span class="path47"></span><span class="path48"></span><span class="path49"></span><span class="path50"></span><span class="path51"></span></span></a>
-      <ul class="hide-on-med-and-down">
-        <li><a href="#">Nuestras tiendas</a></li>
-        <li><a href="#">Ofertas</a></li>
-        <li><a href="#">Eventos</a></li>
-        <li><a href="#">Registro</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#"><span class="icon-search"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span></a></li>
-      </ul>
+		<!-- CSS  -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+		<link href="css/main.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	</head>
+	<body>
+		<header>
+			<div class="navbar-fixed">
+				<nav role="navigation">
+					<div class="nav-wrapper container">
+						<a id="logo-container" href="#" class="brand-logo">
+							<img src="./img/icons/logo.svg" alt="">
+						</a>
+						<ul class="hide-on-med-and-down">
+							<li>
+								<a href="#">Nuestras tiendas</a>
+							</li>
+							<li>
+								<a href="#">Ofertas</a>
+							</li>
+							<li>
+								<a href="#">Eventos</a>
+							</li>
+							<li>
+								<a href="#">Registro</a>
+							</li>
+							<li>
+								<a href="#">Contacto</a>
+							</li>
+							<li><a href="#"><span class="icon-search"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span></a></li>
+						</ul>
+						<ul id="nav-mobile" class="sidenav">
+							<li>
+								<a href="#">Nuestras tiendas</a>
+							</li>
+							<li>
+								<a href="#">Ofertas</a>
+							</li>
+							<li>
+								<a href="#">Eventos</a>
+							</li>
+							<li>
+								<a href="#">Registro</a>
+							</li>
+							<li>
+								<a href="#">Contacto</a>
+							</li>
+							<li><a href="#"><span class="icon-search"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span></a></li>
+						</ul>
+						<a href="#" data-target="nav-mobile" class="sidenav-trigger">
+							<i class="material-icons">menu</i>
+						</a>
+					</div>
+				</nav>
+			</div>
+		</header>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Nuestras tiendas</a></li>
-        <li><a href="#">Ofertas</a></li>
-        <li><a href="#">Eventos</a></li>
-        <li><a href="#">Registro</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#"><span class="icon-search"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span></a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+		<div class="main-carousel">
+			<div class="carousel carousel-slider center">
+				<a id="carousel-prev" class="carousel-control waves-effect left">
+					<i class="material-icons dp48 carousel-control_icon">navigate_before</i>
+					<span class="carousel-control_label">Prev</span>
+				</a>
+				<a id="carousel-next" class="carousel-control waves-effect right">
+					<i class="material-icons dp48 carousel-control_icon">navigate_next</i>
+					<span class="carousel-control_label">Next</span>
+				</a>
+				<div class="carousel-item white-text"
+				href="#one!"
+				style="background-image: url('img/banners/banner1.jpg');">
+					<div class="container">
+						<h2>First Panel</h2>
+						<p>This is your first panel</p>
+					</div>
+				</div>
+				<div class="carousel-item white-text"
+				href="#two!"
+				style="background-image: url('img/banners/banner1.jpg');">
+					<div class="container">
+						<h2>Second Panel</h2>
+						<p>This is your second panel</p>
+					</div>
+				</div>
+				<div class="carousel-item white-text"
+				href="#three!"
+				style="background-image: url('img/banners/banner1.jpg');">
+					<div class="container">
+						<h2>Three Panel</h2>
+						<p>This is your three panel</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  <div id="index-banner" class="parallax-container">
-    <div class="parallax"><img src="img/banner-home.jpg" alt="Unsplashed background img 1"></div>
-  </div>
+		<div class="container">
+			<div class="section">
+				<div class="row">
+					<div class="description">
+						<h2 class="description-title">NUESTRAS TIENDAS</h2>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  <div class="container">
-        <div class="description">
-          <h2 class="description-title">NUESTRAS TIENDAS</h2>
-        </div>
-  </div>
+		<div class="offer_wrap">
+			<div class="container">
+				<div class="offer_container no-m-top">
+					<div class="offer_item">
+						<div class="offer">
+							<div class="offer_image">
+								<img class="offer_img" src="img/registra-y-gana.jpg" alt=""/>
+							</div>
+						</div>
+					</div>
+					<div class="offer_item">
+						<div class="offer">
+							<div class="offer_image">
+								<img class="offer_img" src="img/encuentras-todo.jpg" alt=""/>
+							</div>
+						</div>
+					</div>
+					<div class="offer_item">
+						<div class="offer">
+							<div class="offer_image">
+								<img class="offer_img" src="img/balones.jpg" alt=""/>
+							</div>
+						</div>
+					</div>
+					<div class="offer_item">
+						<div class="offer">
+							<div class="offer_image">
+								<img class="offer_img" src="img/polla-copera.jpg" alt=""/>
+							</div>
+						</div>
+					</div>
+					<div class="offer_item">
+						<div class="offer">
+							<div class="offer_image">
+								<img class="offer_img" src="img/tecnologia.jpg" alt=""/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  <div class="promos-container our-stores">
-    <div class="img-wrapper">
-      <img src="img/registra-y-gana.jpg" alt="" />
-    </div>
-    <div class="img-wrapper">
-      <img src="img/encuentras-todo.jpg" alt="" />
-    </div>
-    <div class="img-wrapper">
-      <img src="img/balones.jpg" alt="" />
-    </div>
-    <div class="img-wrapper">
-      <img src="img/polla-copera.jpg" alt="" />
-    </div>
-    <div class="img-wrapper">
-      <img src="img/tecnologia.jpg" alt="" />
-    </div>
-  </div>
+		<div class="ico-services container">
+			<div class="row">
 
-  <div class="ico-services container">
-    <div class="row">
+			<div class="ico-services-wrapper">
+				<span class="icon-canasta"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span></span>
+				<h4 class="ico-services-title">CATEGORÍA</h4>      
+			</div>
+			
+			<div class="ico-services-wrapper">
+				<span class="icon-plata"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span></span> 
+				<h4 class="ico-services-title">CATEGORÍA</h4>
+			</div>
+			
+			<div class="ico-services-wrapper">
+				<span class="icon-ropa"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span></span>  
+				<h4 class="ico-services-title">CATEGORÍA</h4>
+			</div>
+			
+			<div class="ico-services-wrapper">
+				<span class="icon-supermercado"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span></span>  
+				<h4 class="ico-services-title">CATEGORÍA</h4>
+			</div>
+			
+			<div class="ico-services-wrapper">        
+				<span class="icon-perfumes"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span></span>
+				<h4 class="ico-services-title">CATEGORÍA</h4>
+			</div>
+			
+			<div class="ico-services-wrapper">
+				<span class="icon-zapatos"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>  
+				<h4 class="ico-services-title">CATEGORÍA</h4>
+			</div>
 
-      <div class="ico-services-wrapper">
-        <span class="icon-canasta"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span></span>
-        <h4 class="ico-services-title">CATEGORÍA</h4>      
-      </div>
-    
-      <div class="ico-services-wrapper">
-        <span class="icon-plata"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span></span> 
-        <h4 class="ico-services-title">CATEGORÍA</h4>
-      </div>
-    
-      <div class="ico-services-wrapper">
-        <span class="icon-ropa"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span></span>  
-        <h4 class="ico-services-title">CATEGORÍA</h4>
-      </div>
-    
-      <div class="ico-services-wrapper">
-        <span class="icon-supermercado"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span></span>  
-        <h4 class="ico-services-title">CATEGORÍA</h4>
-      </div>
-    
-      <div class="ico-services-wrapper">        
-        <span class="icon-perfumes"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span></span>
-        <h4 class="ico-services-title">CATEGORÍA</h4>
-      </div>
-    
-      <div class="ico-services-wrapper">
-        <span class="icon-zapatos"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>  
-        <h4 class="ico-services-title">CATEGORÍA</h4>
-      </div>
+			<div class="ico-services-wrapper">
+				<span class="icon-tarjetas"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span></span>
+				<h4 class="ico-services-title">CATEGORÍA</h4>
+			</div>
 
-      <div class="ico-services-wrapper">
-        <span class="icon-tarjetas"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span></span>
-        <h4 class="ico-services-title">CATEGORÍA</h4>
-      </div>
+			<div class="ico-services-wrapper">
+				<span class="icon-maquillaje"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span></span>
+				<h4 class="ico-services-title">CATEGORÍA</h4>
+			</div>
 
-      <div class="ico-services-wrapper">
-        <span class="icon-maquillaje"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span></span>
-        <h4 class="ico-services-title">CATEGORÍA</h4>
-      </div>
+			<div class="ico-services-wrapper">
+				<span class="icon-cartera"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span></span> 
+				<h4 class="ico-services-title">CATEGORÍA</h4>
+			</div>
 
-      <div class="ico-services-wrapper">
-        <span class="icon-cartera"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span></span> 
-        <h4 class="ico-services-title">CATEGORÍA</h4>
-      </div>
+			<div class="ico-services-wrapper">
+				<span class="icon-regalo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span></span>
+				<h4 class="ico-services-title">CATEGORÍA</h4>
+			</div>
 
-      <div class="ico-services-wrapper">
-        <span class="icon-regalo"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span></span>
-        <h4 class="ico-services-title">CATEGORÍA</h4>
-      </div>
+			</div>
+		</div>
 
-    </div>
-  </div>
+		<footer class="main-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col l4 m6 s12">
+						<div class="main-footer_column">
+							<h5 class="main-footer_title">INFORMACIÓN</h5>
+							<ul class="main-footer_list">
+								<li>
+									<a href="#!">Política de elementos extraviados</a>
+								</li>
+								<li>
+									<a href="#!">Trabaje con nosotros</a>
+								</li>
+								<li>
+									<a href="#!">Ley protección de datos</a>
+								</li>
+							</ul>
+						</div>
+						<div class="main-footer_column">
+							<h5 class="main-footer_title">CATEGORÍAS</h5>
+							<ul class="main-footer_list">
+								<li>
+									<a href="#!">Espacios comerciales.</a>
+								</li>
+								<li>
+									<a href="#!">Eventos</a>
+								</li>
+								<li>
+									<a href="#!">Gente Parque Caldas</a>
+								</li>
+								<li>
+									<a href="#!">Información</a>
+								</li>
+								<li>
+									<a href="#!">Lo mejor de Parque Caldas</a>
+								</li>
+								<li>
+									<a href="#!">Noticias de Interés</a>
+								</li>
+								<li>
+									<a href="#!">Nuestros almacenes</a>
+								</li>
+								<li>
+									<a href="#!">Nuestros Sorteos</a>
+								</li>
+								<li>
+									<a href="#!">Servicios</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col l4 m6 s12">
+						<div class="main-footer_column">
+							<h5 class="main-footer_title">UBICACIÓN</h5>
+							<ul class="main-footer_list main-footer_list--style1">
+								<li>
+									<span class="main-footer_label">Dirección:</span>
+									<span class="main-footer_text">Carrera 22 # 29 – 29</span>
+								</li>
+								<li>
+									<span class="main-footer_label">Dirección administrativa:</span>
+									<span class="main-footer_text">Carrera 21 # 30 – 03 <br> Primer piso</span>
+								</li>
+								<li>
+									<span class="main-footer_label">Teléfonos:</span>
+									<span class="main-footer_text">Información: (6) 8830317<br> Administración: (6) 8834427</span>
+								</li>
+								<li>
+									<span class="main-footer_label">Email:</span>
+									<a href="mailto:contactenos@parquecaldas.com.co"
+									class="main-footer_text main-footer_text-email"
+									title="contactenos@parquecaldas.com.co">contactenos@parquecaldas.com.co</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col l4 m12 s12">
+						<div class="main-footer_column main-footer_column--social_network">
+							<h5 class="main-footer_title">REDES SOCIALES</h5>
+							<ul class="main-footer_list-social_network">
+								<li>
+									<a href="#!">
+										<span class="icon icon-facebook">
+										<span class="path1"></span><span class="path2"></span></span>
+									</a>
+								</li>
+								<li>
+									<a href="#!">
+										<span class="icon icon-twitter">
+										<span class="path1"></span><span class="path2"></span></span>
+									</a>
+								</li>
+								<li>
+									<a href="#!">
+										<span class="icon icon-instagram"><span class="path1"></span><span class="path2"></span></span>
+									</a>
+								</li>
+							</ul>
+							<ul class="main-footer_list-social_network-vertical">
+								<li>
+									<a href="#!">
+										<span class="icon icon-messenger"></span>
+									</a>
+								</li>
+								<li>
+									<a href="#!">
+										<span class="icon icon-whatsapp"></span>
+									</a>
+								</li>
+								<li>
+									<a href="#!">
+										<span class="icon icon-phone"></span>
+									</a>
+								</li>
+								<li>
+									<a href="#!">
+										<span class="icon icon-email"></span>
+									</a>
+								</li>
+								<li>
+									<a href="#!">
+										<span class="icon icon-contact"></span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-footer_copyright">
+				<div class="container">
+				© 2020 Centro Comercial Parque Caldas</a>
+			</div>
+		</div>
+	</footer>
 
-  
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l4 s12">
-          <h5 class="white-text">INFORMACIÓN</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Política de elementos extraviados</a></li>
-            <li><a class="white-text" href="#!">Trabaje con nosotros</a></li>
-            <li><a class="white-text" href="#!">Ley protección de datos</a></li>
-          </ul>
-
-          <h5 class="white-text">CATEGORÍAS</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Espacios comerciales.</a></li>
-            <li><a class="white-text" href="#!">Eventos</a></li>
-            <li><a class="white-text" href="#!">Gente Parque Caldas</a></li>
-            <li><a class="white-text" href="#!">Información</a></li>
-            <li><a class="white-text" href="#!">Lo mejor de Parque Caldas</a></li>
-            <li><a class="white-text" href="#!">Noticias de Interés</a></li>
-            <li><a class="white-text" href="#!">Nuestros almacenes</a></li>
-            <li><a class="white-text" href="#!">Nuestros Sorteos</a></li>
-            <li><a class="white-text" href="#!">Servicios</a></li>
-          </ul>
-
-
-        </div>
-        <div class="col l4 s12">
-          <h5 class="white-text">UBICACIÓN</h5>
-          <ul class="location">
-            <li class="white-text"><span><b>Dirección: </b></span> <span>Carrera 22 # 29 – 29</span></li>
-            <li class="white-text"><span><b>Dirección administrativa:</b></span><span>Carrera 21 # 30 – 03 <br> Primer piso</span></li>
-            <li class="white-text"><span><b>Teléfonos:</b></span> <span>Información: (6) 8830317<br> Administración: (6) 8834427 </span> </li>
-            <li class="white-text"><span><b>Email:</b></span><span>contactenos@parquecaldas.com.co</span></li>
-          </ul>
-        </div>
-        <div class="col l4 s12">
-          <h5 class="white-text">REDES SOCIALES</h5>
-          <ul class="social-network">
-            <li><a class="white-text" href="#!"><span class="icon-facebook"><span class="path1"></span><span class="path2"></span></span></a></li>
-            <li><a class="white-text" href="#!"><span class="icon-twitter"><span class="path1"></span><span class="path2"></span></span></a></li>
-            <li><a class="white-text" href="#!"><span class="icon-instagram"><span class="path1"></span><span class="path2"></span></span></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright center">
-      <div class="container">
-        © 2019 Centro Comercial Parque Caldas</a>
-      </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-
-  </body>
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.js"></script>
+	<script src="js/init.js"></script>
+	<script>
+		$(document).ready(function () {
+			var instance = M
+				.Carousel
+				.init({fullWidth: true, indicators: true});
+			$('.main-carousel .carousel.carousel-slider').carousel({fullWidth: true, indicators: true});
+			$('#carousel-next').click(function () {
+				$('.main-carousel .carousel').carousel('next');
+			});
+			$('#carousel-prev').click(function () {
+				$(' .main-carousel .carousel').carousel('prev');
+			});
+		})
+	</script>
+</body>
 </html>
