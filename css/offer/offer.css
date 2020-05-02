@@ -1,7 +1,7 @@
 .offer_container {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px 0;
+    margin-bottom: 50px;
 }
 
 .offer_item {
@@ -41,7 +41,7 @@
 }
 @media (min-width: 1200px) {
     .offer_container {
-        margin: 80px 0;
+        margin-bottom: 80px;
     }
     .offer_item {
         flex-basis: 20%;

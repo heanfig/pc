@@ -15,24 +15,30 @@
 @import './services-card/service-card.css';
 @import './offer/offer.css';
 @import './category/category.css';
+/* Description */
 
-.no-m-top {
-  margin-top: 0;
+.description_container {
+	margin-bottom: 50px;
 }
 
-/* Description */
 .description {
-  text-align: center;
+	text-align: center;
 }
 
 .description .description-title {
-  font-family: "cassannet_bold";
-  font-size: 30px;
+	font-family: "cassannet_bold";
+	font-size: 30px;
 }
 
 .description .description-year {
-  font-size: 20px;
-  color: #BF0027;
+	font-size: 20px;
+	color: #BF0027;
+}
+
+@media (min-width: 1200px) {
+	.description_container {
+		margin-bottom: 80px;
+	}
 }
 
 /*# sourceMappingURL=main.css.map */
